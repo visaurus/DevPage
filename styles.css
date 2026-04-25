@@ -1,0 +1,25 @@
+
+    .sampDiv{
+        text-align: center;color:lightpink
+        }
+        
+    .center {
+	text-align:right; color:green;
+	}
+
+    p {
+        text-align: center; color:darkseagreen;
+    }
+
+	#para1 {
+	text-align:right;
+	color: blue
+	}
+
+	h3, h4, p {
+	text-align: center;
+	color: violet;
+	}
+
+	
+
