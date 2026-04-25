@@ -1,0 +1,361 @@
+body {
+      margin: 10px;
+      font-family: 'Arial', Helvetica, sans-serif;
+      background-image:
+        linear-gradient(
+          rgba(255, 255, 255, 0.75),
+          rgba(255, 255, 255, 0.75)
+        ),
+        url('https://static.vecteezy.com/system/resources/thumbnails/069/163/630/small_2x/purple-hexagon-pattern-banner-and-background-free-vector.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #e6dcff;
+      color: #333;
+    }
+
+    .image-grid {
+       display: flex;
+        flex-wrap: nowrap;
+        gap: 30px;
+        justify-content: center;    
+    }
+
+    .image-grid img {
+        width: 200px;
+    }
+
+    .countdown{
+    text-align: center;
+    margin-top: 0px;
+    font-weight: bold;
+    }
+
+    .logo {
+    justify-content: right;
+    }
+    
+    /*HOME*/
+    .home {
+      background: url("406edeff-5d4c-4d8a-9083-0e3ac3f6fb77.jfif") center/cover no-repeat;
+      height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .home-content {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 600px;
+    }
+
+    .home-content h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      color: #4b3f72;
+    }
+
+    .home-content h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .hero-content p {
+      font-size: 16px;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .shop-btn {
+      text-decoration: none;
+      background-color: #6a5acd;
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .shop-btn:hover {
+      background-color: #5946c6;
+    }
+
+    .sale-info {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .sale-info h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .sale-info span {
+      color: #6a5acd;
+      font-weight: bold;
+    }
+
+    /*PRODCUT PAGE*/ 
+    .image-prod 
+    { display: flex; 
+      flex-wrap: nowrap; 
+      gap: 30px; 
+      justify-content: center; 
+    } 
+      
+      .image-prod img { 
+        width: 200px; 
+      } 
+    
+    /*CONSTANT ELEMENT*/ 
+    .count-overlay{
+       position: fixed; 
+       top: 0; 
+       left: 0; 
+       width: 100%; 
+       color: black; 
+       padding: 10px; 
+       z-index: 1500; 
+       margin-top: 500px; 
+       padding: 20px; 
+      } 
+      
+      .countdown-lay{ 
+        text-align: center; 
+        margin-top: 0px; 
+        font-weight: bold; 
+      } 
+      
+      .search { background: rgb(208, 208, 208); 
+        width: 250px; 
+        padding: 8px 15px; 
+        border-radius: 40px; 
+        text-align: center; 
+        font-size: 14px; 
+      }
+
+      .top-header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        padding: 15px 30px;
+        font-weight: bolder;
+      }
+
+      .header-left span {
+        margin-right: 15px;
+        cursor: pointer;
+      }
+
+      .header-center {
+        display: flex;
+        justify-content: center;
+      }
+
+      .search-bar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #f1f1f1;
+        padding: 8px 15px;
+        border-radius: 20px;
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .search-bar input {
+        border: none;
+        outline: none;
+        background: none;
+        width: 100%;
+      }
+
+      .header-right {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        cursor: pointer;
+      }
+
+
+/* DESCRIPTION */
+.product-container {
+  display: flex;
+  gap: 40px;
+  margin: 40px;
+}
+
+
+.product-images {
+  width: 45%;
+}
+
+.image-descrip img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.image-des {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.image-des img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.image-description {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}
+
+
+.product-info {
+  width: 55%;
+}
+
+.price {
+  font-size: x-large;
+  font-weight: bold;
+  color: red;
+}
+
+.sale {
+  font-weight: bold;
+  color: red;
+}
+
+.div-des {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.stock {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.cart-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cart-actions input {
+  width: 60px;
+  padding: 6px;
+}
+
+.cart-actions button {
+  padding: 10px 20px;
+  background-color: #e6dcff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cart-actions button:hover {
+  background-color: #cbbcff;
+}
+
+.available {
+  color: #63e69a;
+}
+
+/*HTANK U*/
+
+    .thank-you-container {
+      background-color: #ffffff;
+      padding: 40px;
+      max-width: 450px;
+      width: 90%;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .thank-you-container h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .thank-you-container p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: 0.3s ease;
+    }
+
+    .view-cart {
+      background-color: #6a5acd;
+      color: #fff;
+    }
+
+    .view-cart:hover {
+      background-color: #5946c6;
+    }
+
+    .continue-shopping {
+      background-color: #e0e0e0;
+      color: #333;
+    }
+
+    .continue-shopping:hover {
+      background-color: #d5d5d5;
+    }
+
+    .page-center {
+      min-height: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    } 
+
+/*CATGROY*/
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.product-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.category-name {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}

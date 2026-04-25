@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VI HIVE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="top-header">
+
+  <div class="header-left">
+    <span class="brand"><mark style="background-color:#e6dcff;">VI HIVE</mark></span>
+    <span>Products</span>
+    <span>Offers</span>
+    <span>Services</span>
+  </div>
+
+  <div class="header-center">
+    <div class="search-bar">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="What are you looking for?">
+    </div>
+  </div>
+
+  <div class="header-right">
+    <span><i class="fa-solid fa-user"></i> Log In</span>
+    <span><i class="fa-solid fa-truck"></i></span>
+    <span><i class="fa-solid fa-cart-shopping"></i></span>
+  </div>
+</header>
+
+ <div class="count-overlay" style="background-color: #e6dcff; width: auto; padding: 1px 1px;">
+    <h4>Shop now before the sale ends in:</h4>
+    <h3 class="countdown-lay" id="demo"></h3>
+
+<script>
+var countDownDate = new Date("Jan 30, 2026 15:37:25").getTime();
+
+
+var x = setInterval(function() {
+
+
+  var now = new Date().getTime();
+   
+  var distance = countDownDate - now;
+   
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+   
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+   
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    </div>
+
+  <div class="page-center">
+    <div class="thank-you-container">
+      <h1>Thank You!</h1>
+    <h1>Item Added to Cart</h1>
+    <p>Thank you for adding this product to your cart. You can continue shopping or review your cart anytime.</p>
+
+    <div class="buttons">
+      <a href="cart.html" class="view-cart">View Cart</a>
+      <a href="home.html" class="continue-shopping">Continue Shopping</a>
+    </div>
+  </div>
+  </div>
+
+<BR><br><br>
+</body>
+
+
+<footer>
+    <sample style="text-align: center;">Copyright &copy 2025 Jherella Vishane V. Santos | All Rights Reserved </sample>
+</footer>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
